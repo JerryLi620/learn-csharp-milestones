@@ -50,7 +50,7 @@ Getting to Know Your Environment (9–21)
 
 - [ ] ✏️ Open the reference manual for any component from inside Unity. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/Manual/class-Rigidbody.html)
 - [ ] ✏️ Find the button to jump to the scripting reference the any reference manual page. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/ScriptReference/Rigidbody.html)
-- [ ] ✏️ Search for the `Strings` class in [Microsoft's C# documents](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/). Paste the link: **??**
+- [ ] ✏️ Search for the `Strings` class in [Microsoft's C# documents](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/). Paste the link:(https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 
 
 ## Chapter 2
