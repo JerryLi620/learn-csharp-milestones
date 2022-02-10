@@ -48,34 +48,34 @@ Below is a list of tasks that correspond roughly to the "Take Action" sections o
 ## Chapter 1
 Getting to Know Your Environment (9–21)
 
-- [ ] ✏️ Open the reference manual for any component from inside Unity. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/Manual/class-Rigidbody.html)
-- [ ] ✏️ Find the button to jump to the scripting reference the any reference manual page. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/ScriptReference/Rigidbody.html)
-- [ ] ✏️ Search for the `Strings` class in [Microsoft's C# documents](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/). Paste the link:(https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
+- [x] ✏️ Open the reference manual for any component from inside Unity. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/Manual/class-Rigidbody.html)
+- [x] ✏️ Find the button to jump to the scripting reference the any reference manual page. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/ScriptReference/Rigidbody.html)
+- [x] ✏️ Search for the `Strings` class in [Microsoft's C# documents](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/). Paste the link:(https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 
 
 ## Chapter 2
 The Building Blocks of Programming (22–37)
 
-- [ ] Open the Unity project contained within this repo
-- [ ] Create Assets/Scripts/LearningCurve.cs
-	- [ ] Create C# variables with typeof `int`, `float`, `string`, and `bool`
-	- [ ] Add a single line, multi line, and summary comment to LearningCurve.cs
-	- [ ] Run the code in LearningCurve by attaching it to the Main Camera GameObject
+- [x] Open the Unity project contained within this repo
+- [x] Create Assets/Scripts/LearningCurve.cs
+	- [x] Create C# variables with typeof `int`, `float`, `string`, and `bool`
+	- [x] Add a single line, multi line, and summary comment to LearningCurve.cs
+	- [x] Run the code in LearningCurve by attaching it to the Main Camera GameObject
 
 
 ## Chapter 3
 Diving into Variables, Types, and Methods (38–64)
 
-- [ ] Update Assets/Scripts/LearningCurve.cs
-	- [ ] Variables
-		- [ ] Use access modifiers to make your variables explicitly `public` and `private`
-		- [ ] Use `Debug.Log` and `Debug.LogFormat` to log your variables to the console
-		- [ ] Concatenate strings using the `+` operator, and the string interpolation method `$`
-	- [ ] Methods
-		- [ ] Define a simple method with parameters
-		- [ ] Add a return type and return some data from a method
-		- [ ] Use data returned from a method
-- [ ] ✏️ Explain some differences between public and private variables: Public variables are variables that are visible to all classes. Private variables are variables that are only visible to the class they belong to.
+- [x] Update Assets/Scripts/LearningCurve.cs
+	- [x] Variables
+		- [x] Use access modifiers to make your variables explicitly `public` and `private`
+		- [x] Use `Debug.Log` and `Debug.LogFormat` to log your variables to the console
+		- [x] Concatenate strings using the `+` operator, and the string interpolation method `$`
+	- [x] Methods
+		- [x] Define a simple method with parameters
+		- [x] Add a return type and return some data from a method
+		- [x] Use data returned from a method
+- [x] ✏️ Explain some differences between public and private variables: Public variables are variables that are visible to all classes. Private variables are variables that are only visible to the class they belong to.
 
 
 ## Chapter 4
