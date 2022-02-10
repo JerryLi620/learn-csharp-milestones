@@ -48,8 +48,8 @@ Below is a list of tasks that correspond roughly to the "Take Action" sections o
 ## Chapter 1
 Getting to Know Your Environment (9–21)
 
-- [x] ✏️ Open the reference manual for any component from inside Unity. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/Manual/class-Rigidbody.html)
-- [x] ✏️ Find the button to jump to the scripting reference the any reference manual page. Paste the link: (file:///Applications/Unity/Hub/Editor/2021.2.9f1/Documentation/en/ScriptReference/Rigidbody.html)
+- [x] ✏️ Open the reference manual for any component from inside Unity. Paste the link: (https://docs.unity3d.com/Manual/class-Rigidbody.html)
+- [x] ✏️ Find the button to jump to the scripting reference the any reference manual page. Paste the link: (https://docs.unity3d.com/ScriptReference/Rigidbody.html)
 - [x] ✏️ Search for the `Strings` class in [Microsoft's C# documents](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/). Paste the link:(https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 
 
