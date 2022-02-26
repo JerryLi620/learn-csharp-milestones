@@ -8,6 +8,9 @@ public class LearningCurve : MonoBehaviour
     public float accelaration = 2.5f;
     public string name = "Jerry";
     private bool alive = true;
+    public Transform CamTransform;
+    public GameObject DirectionLight;
+    public Transform LightTransform;
 
     // Single Line Comment
     /*
@@ -34,6 +37,8 @@ public class LearningCurve : MonoBehaviour
     {
       return name+LastName;
     }
+
+
 
     void Start()
     {
@@ -83,6 +88,28 @@ public class LearningCurve : MonoBehaviour
       {
            Debug.LogFormat("{0} - {1}", name_age.Key, name_age.Value);
       }
+
+      Character heroine = new Character("Toffy");
+      Character hero = new Character("Jelli");
+      Debug.LogFormat("Hero: {0} - {1} EXP", heroine.name,
+        heroine.exp);
+      Debug.LogFormat("Hero: {0} - {1} EXP", hero.name,
+        hero.exp);
+
+      Weapon huntingBow = new Weapon("Hunting Bow", 105);
+      Weapon warBow = new Weapon("War Bow", 200);
+      huntingBow.PrintWeaponStats();
+      warBow.PrintWeaponStats();
+
+      Paladin knight = new Paladin("Russell", warBow);
+      knight.PrintStatsInfo();
+
+      CamTransform = this.GetComponent<Transform>();
+      Debug.Log(CamTransform.localPosition);
+
+      DirectionLight = GameObject.Find("Directional Light");
+      LightTransform = DirectionLight.GetComponent<Transform>();
+      Debug.Log(LightTransform.localPosition);
     }
 
     // Update is called once per frame
