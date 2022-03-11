@@ -12,17 +12,26 @@ public class PlayerBehaviour : MonoBehaviour
     private float _hInput;
     private Rigidbody _rb;
 
+    public float JumpVelocity = 5f;
+    private bool _isJumping;
+
+    public float DistanceToGround = 0.1f;
+    public LayerMask GroundLayer;
+    private CapsuleCollider _col;
+
     void Start()
     {
-
         _rb = GetComponent<Rigidbody>();
+        _col = GetComponent<CapsuleCollider>();
     }
+
     void Update()
     {
 
         _vInput = Input.GetAxis("Vertical") * MoveSpeed; // 4
         _hInput = Input.GetAxis("Horizontal") * RotateSpeed;
-/*
+        _isJumping |= Input.GetKeyDown(KeyCode.Space);
+        /*
         this.transform.Translate(Vector3.forward * _vInput *
         Time.deltaTime);
 
@@ -42,6 +51,24 @@ public class PlayerBehaviour : MonoBehaviour
         _rb.MovePosition(this.transform.position +
             this.transform.forward * _vInput * Time.fixedDeltaTime);
 
-         _rb.MoveRotation(_rb.rotation * angleRot);
+        _rb.MoveRotation(_rb.rotation * angleRot);
+
+        if(IsGrounded() && _isJumping)
+        {
+            _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
+        }
+        _isJumping = false;
+    }
+
+    private bool IsGrounded()
+    {
+        Vector3 capsuleBottom = new Vector3(_col.bounds.center.x,
+        _col.bounds.min.y, _col.bounds.center.z);
+
+        bool grounded = Physics.CheckCapsule(_col.bounds.center,
+            capsuleBottom, DistanceToGround, GroundLayer,
+            QueryTriggerInteraction.Ignore);
+
+        return grounded;
     }
 }

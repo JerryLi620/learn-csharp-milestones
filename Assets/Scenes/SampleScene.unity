@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 316924422}
   - component: {fileID: 316924421}
   - component: {fileID: 316924420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 344367340}
   - component: {fileID: 344367339}
   - component: {fileID: 344367338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,6 +739,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 10
   RotateSpeed: 75
+  JumpVelocity: 5
+  DistanceToGround: 0.1
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5836,7 +5841,7 @@ GameObject:
   - component: {fileID: 1549045335}
   - component: {fileID: 1549045334}
   - component: {fileID: 1549045333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5933,7 +5938,7 @@ GameObject:
   - component: {fileID: 1857236442}
   - component: {fileID: 1857236441}
   - component: {fileID: 1857236440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6027,7 +6032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2005449641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6066,7 +6071,7 @@ GameObject:
   - component: {fileID: 2104816853}
   - component: {fileID: 2104816852}
   - component: {fileID: 2104816851}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
