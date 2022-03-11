@@ -175,9 +175,9 @@ Movement, Camera Controls, and Collisions (149–175)
 Scripting Game Mechanics (176–207)
 
 - Character Control
-	- [ ] Capture keyboard input in C# using the `enum` type and value `KeyCode.Space`
-	- [ ] Use `AddForce()` to make a character jump
-	- [ ] Use a `LayerMask` and a new "Ground" layer in Unity to determine if a character is "IsGrounded"
+	- [x] Capture keyboard input in C# using the `enum` type and value `KeyCode.Space`
+	- [x] Use `AddForce()` to make a character jump
+	- [x] Use a `LayerMask` and a new "Ground" layer in Unity to determine if a character is "IsGrounded"
 - [ ] Add a shooting mechanic
 	- [ ] Create a "projectile" prefab that moves forward using `RigidBody.velocity`
 	- [ ] Instantiate the projectile on click and destroy it after `3` seconds
