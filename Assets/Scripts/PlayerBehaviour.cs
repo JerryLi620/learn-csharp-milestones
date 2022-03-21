@@ -19,6 +19,10 @@ public class PlayerBehaviour : MonoBehaviour
     public LayerMask GroundLayer;
     private CapsuleCollider _col;
 
+    public GameObject Bullet;
+    public float BulletSpeed = 100f;
+    private bool _isShooting;
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -31,6 +35,7 @@ public class PlayerBehaviour : MonoBehaviour
         _vInput = Input.GetAxis("Vertical") * MoveSpeed; // 4
         _hInput = Input.GetAxis("Horizontal") * RotateSpeed;
         _isJumping |= Input.GetKeyDown(KeyCode.Space);
+        _isShooting |= Input.GetMouseButtonDown(0);
         /*
         this.transform.Translate(Vector3.forward * _vInput *
         Time.deltaTime);
@@ -57,7 +62,16 @@ public class PlayerBehaviour : MonoBehaviour
         {
             _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
         }
+        
+        if (_isShooting)
+        {
+            GameObject newBullet = Instantiate(Bullet,
+            this.transform.position + new Vector3(1, 0, 0),this.transform.rotation);
+            Rigidbody BulletRB = newBullet.GetComponent<Rigidbody>();
+            BulletRB.velocity = this.transform.forward * BulletSpeed;
+        }
         _isJumping = false;
+        _isShooting = false;
     }
 
     private bool IsGrounded()
