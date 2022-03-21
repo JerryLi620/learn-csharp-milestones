@@ -178,12 +178,12 @@ Scripting Game Mechanics (176–207)
 	- [x] Capture keyboard input in C# using the `enum` type and value `KeyCode.Space`
 	- [x] Use `AddForce()` to make a character jump
 	- [x] Use a `LayerMask` and a new "Ground" layer in Unity to determine if a character is "IsGrounded"
-- [ ] Add a shooting mechanic
-	- [ ] Create a "projectile" prefab that moves forward using `RigidBody.velocity`
-	- [ ] Instantiate the projectile on click and destroy it after `3` seconds
-- [ ] Create a GameManager
- 	- [ ] Use `get` and `set` properties to return and assign properties that are used across the game
-- [ ] Add a simple UI to inform the user of game state(s)
-	- [ ] Add text to show the health and items counts to the user
-	- [ ] Add a win condition to the game and display it in the UI
-	- [ ] Use `Time.timeScale = 0` to pause the game
+- [x] Add a shooting mechanic
+	- [x] Create a "projectile" prefab that moves forward using `RigidBody.velocity`
+	- [x] Instantiate the projectile on click and destroy it after `3` seconds
+- [x] Create a GameManager
+ 	- [x] Use `get` and `set` properties to return and assign properties that are used across the game
+- [x] Add a simple UI to inform the user of game state(s)
+	- [x] Add text to show the health and items counts to the user
+	- [x] Add a win condition to the game and display it in the UI
+	- [x] Use `Time.timeScale = 0` to pause the game
